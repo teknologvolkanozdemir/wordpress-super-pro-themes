@@ -1,0 +1,143 @@
+/*
+Theme Name: Superpro
+Description: Erişilebilir, klasik PHP mimarili mağaza teması.
+Version: 1.0.0
+Text Domain: superpro
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	color: #17212b;
+	background: #fff;
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+}
+
+a {
+	color: #0645ad;
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+	outline: 3px solid #b54708;
+	outline-offset: 3px;
+}
+
+.skip-link {
+	position: absolute;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	padding: 0.75rem 1rem;
+	color: #fff;
+	background: #17212b;
+	transform: translateY(-150%);
+}
+
+.skip-link:focus {
+	transform: translateY(0);
+}
+
+.screen-reader-text {
+	position: absolute !important;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+.site-header,
+.site-footer,
+.site-main,
+.shop-sidebar {
+	width: min(100% - 2rem, 72rem);
+	margin-inline: auto;
+}
+
+.site-header,
+.site-footer {
+	padding-block: 1.5rem;
+}
+
+.primary-navigation ul,
+.product-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	padding: 0;
+	list-style: none;
+}
+
+.product-list li {
+	flex: 1 1 15rem;
+	padding: 1rem;
+	border: 1px solid #667085;
+}
+
+.product-list img,
+.product-image {
+	max-width: 100%;
+	height: auto;
+}
+
+button,
+input,
+textarea {
+	font: inherit;
+}
+
+button,
+input[type="submit"] {
+	padding: 0.5rem 0.8rem;
+	color: #fff;
+	background: #173b67;
+	border: 2px solid #173b67;
+	cursor: pointer;
+}
+
+input:not([type="submit"]),
+textarea {
+	display: block;
+	width: min(100%, 36rem);
+	padding: 0.5rem;
+	border: 1px solid #475467;
+}
+
+label {
+	display: block;
+	margin-top: 1rem;
+	font-weight: 700;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th,
+td {
+	padding: 0.75rem;
+	border: 1px solid #475467;
+	text-align: left;
+}
+
+.cart-notice {
+	padding: 0.75rem;
+	border: 2px solid #176b3a;
+}
+
+.site-footer {
+	margin-top: 3rem;
+	border-top: 1px solid #667085;
+}
